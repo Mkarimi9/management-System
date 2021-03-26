@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.Clogin">
+   <children>
+      <SplitPane layoutX="300.0" layoutY="1.0" prefHeight="400.0" prefWidth="300.0">
+         <items>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ff7f50;">
+               <children>
+                  <Label fx:id="welcome" layoutX="120.0" layoutY="20.0" text="Welcome">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="68.0" layoutY="108.0" mnemonicParsing="false" onAction="#showWorkers" text="Show Project WorkForce">
+                     <effect>
+                        <Reflection />
+                     </effect></Button>
+                  <Button layoutX="155.0" layoutY="162.0" mnemonicParsing="false" onAction="#showDetails" text="Show My details">
+                     <effect>
+                        <Reflection />
+                     </effect></Button>
+                  <Button layoutX="161.0" layoutY="223.0" mnemonicParsing="false" onAction="#getProgress1" text="Project Progress ">
+                     <effect>
+                        <Reflection />
+                     </effect></Button>
+                  <Button layoutX="52.0" layoutY="162.0" mnemonicParsing="false" onAction="#delayed" text="Delayed?">
+                     <effect>
+                        <Reflection />
+                     </effect></Button>
+                  <TextArea fx:id="display" editable="false" layoutX="61.0" layoutY="284.0" prefHeight="107.0" prefWidth="178.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextArea>
+                  <Label layoutX="21.0" layoutY="53.0" text="What would you like to know?">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="37.0" layoutY="223.0" mnemonicParsing="false" onAction="#updateDetails" text="Update Details">
+                     <effect>
+                        <Reflection />
+                     </effect></Button>
+                  <Button layoutX="129.0" layoutY="366.0" mnemonicParsing="false" onAction="#resetClicked" text="reset" />
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutClicked" text="logout" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <ImageView fitHeight="405.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@79463_4796318_791479_image.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

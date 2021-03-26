@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.Alog">
+    <children>
+        <SplitPane layoutX="300.0" layoutY="1.0" prefHeight="400.0" prefWidth="300.0">
+            <items>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ff7f50;">
+                    <children>
+                        <Label fx:id="welcome" layoutX="120.0" layoutY="20.0" text="Welcome">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#showWorkers" text="Show  WorkForce">
+                     <effect>
+                        <DropShadow>
+                           <input>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </input>
+                        </DropShadow>
+                     </effect></Button>
+                        <Button layoutX="173.0" layoutY="71.0" mnemonicParsing="false" onAction="#showDetails" text="Show My details">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                        <TextArea fx:id="display" editable="false" layoutX="93.0" layoutY="290.0" prefHeight="101.0" prefWidth="192.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextArea>
+                        <Label layoutX="4.0" layoutY="47.0" text="What would you like to do?">
+                            <font>
+                                <Font name="System Bold Italic" size="13.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="169.0" layoutY="105.0" mnemonicParsing="false" onAction="#updateDetails" text="Update Details">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                        <Button layoutX="162.0" layoutY="366.0" mnemonicParsing="false" onAction="#resetClicked" text="reset" />
+                  <TextField fx:id="empid" layoutX="125.0" layoutY="150.0" promptText="employee id" />
+                  <Label layoutX="23.0" layoutY="154.0" text="INPUT EMP_ID" />
+                  <Button layoutX="47.0" layoutY="249.0" mnemonicParsing="false" onAction="#addtoProject" text="ADD to Project">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button layoutX="16.0" layoutY="187.0" mnemonicParsing="false" onAction="#fire" text="Fire Employee">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button layoutX="132.0" layoutY="187.0" mnemonicParsing="false" onAction="#view" text="view Employee Details">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Label layoutX="32.0" layoutY="135.0" text="*following functions need an Employee id to work">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="project" layoutX="153.0" layoutY="249.0" prefHeight="25.0" prefWidth="103.0" promptText="project name" />
+                  <Button layoutX="77.0" layoutY="218.0" mnemonicParsing="false" onAction="#remove" text="remove from Project">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button layoutX="8.0" layoutY="322.0" mnemonicParsing="false" onAction="#viewClients" text="view Clients">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button layoutX="5.0" layoutY="354.0" mnemonicParsing="false" onAction="#viewProjects" text="view Projects">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button layoutX="23.0" layoutY="105.0" mnemonicParsing="false" onAction="#newProject" text="Create new Project">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button layoutX="6.0" layoutY="8.0" mnemonicParsing="false" onAction="#logout" text="log out" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <ImageView fitHeight="405.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@79463_4796318_791479_image.jpg" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
